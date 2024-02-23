@@ -1,0 +1,83 @@
+/*header {
+  display: grid; /* Création d’une grille mais sans définir de colonnes
+
+  align-items: end; /* Aligner les grid-items par le bas
+
+  justify-items: center; /* Centrer les grid-items horizontalement
+}
+
+img,
+h1 {
+  /*Les deux grid-items occupent la même cellule de la grile
+
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: #21315a;
+  width: 100%;
+
+  display: grid;
+  align-items: end;
+  justify-items: center;
+}
+header h1 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 64px;
+
+  color: #94ce5a;
+  padding-bottom: 15px;
+}
+header img {
+  width: 715px;
+  height: 535px;
+}
+header h1,
+header img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 20px;
+}
+article {
+  background-color: #21315a;
+  padding: 12px;
+}
+article h2 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  padding-bottom: 13px;
+
+  display: flex;
+  justify-content: center;
+  color: #94ce5a;
+}
+article p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+
+  color: white;
+}
