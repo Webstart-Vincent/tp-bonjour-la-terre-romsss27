@@ -42,24 +42,13 @@ header h1 {
   padding-bottom: 15px;
 }
 header img {
-  width: 715px;
-  height: 535px;
+  max-width: 715px;
 }
 header h1,
 header img {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  gap: 20px;
-}
 article {
   background-color: #21315a;
   padding: 12px;
@@ -80,4 +69,41 @@ article p {
   font-size: 16px;
 
   color: white;
+}
+
+.section1 {
+  background-color: #242830;
+  padding: 20px;
+}
+.section2 {
+  background-color: #f5f7f8;
+  padding: 20px;
+}
+.section3 {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 20px;
+  max-width: 960px;
+  margin: auto;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .container img {
+    order: 1;
+  }
+  /* J’écrirai ici toutes les déclarations CSS destinées aux mobiles */
+  header h1 {
+    font-size: 36px;
+    align-items: center;
+  }
 }
